@@ -1,18 +1,29 @@
 package com.example.jb.td2;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.number_picker_layout);
+        setContentView(R.layout.layout_relative);
+        Button b_next = (Button)findViewById(R.id.next);
+        b_next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View layout_relative) {
+                Intent intent = new Intent(MainActivity.this, NumberPickerActivity.class);  //Lancer l'activité DisplayVue
+                startActivity(intent);    //Afficher la vue
+
+            }
+        });
     }
 
     @Override

@@ -14,7 +14,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-    </application>
+        </activity>n
+        <activity android:name=".NumberPickerActivity">
+
+    </activity>
+    <activity android:name=".HelloGridView">
+
+    </activity>
+
+</application>
 
 </manifest>
